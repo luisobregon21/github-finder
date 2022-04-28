@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import './App.css'
 
 // Class based components
@@ -9,9 +9,14 @@ class App extends Component {
         // What is being returned is JSX, which is JavaScript under the Hood
         // basiccally seudo HTML code
         return (
-            <div className="App">
+            // like ghost element
+            // <Fragment> this will be the same as the empty --> brackets <>
+            <>
+                {/* <div className="App"> */}
                 <h1>GIthub Finder</h1>
-            </div>
+                {/* </div> */}
+            </>
+            // </Fragment>
         )
     }
 }
